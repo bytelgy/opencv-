@@ -1,0 +1,12 @@
+第一步：找出python版本对应：
+  1.进入（base）模式
+  2.执行以下命令：
+    import pip._internal
+    print(pip._internal.pep425tags.get_supported())
+  如果成功打印会出现你的python对应pip适用的文件符号：
+[('cp37', 'cp37m', 'win_amd64'), ('cp37', 'none', 'win_amd64'), ('py3', 'none', 'win_amd64'), ('cp37', 'none', 'any'), ('cp3', 'none', 'any'), ('py37', 'none', 'any'), ('py3', 'none', 'any'), ('py36', 'none', 'any'), ('py35', 'none', 'any'), ('py34', 'none', 'any'), ('py33', 'none', 'any'), ('py32', 'none', 'any'), ('py31', 'none', 'any'), ('py30', 'none', 'any')]
+这里可以看出，我们现在测试出的python版本对应pip适应的是(cp37,cp37m,win_amd64)
+
+  3.输入以下命令：（如果使用我之前给的那个anaconda版本的话，这一步可以直接安装成功）
+    pip install -i https://pypi.tuna.tsinghua.edu.cn/simple opencv-python==3.4.1.15
+    pip install -i https://pypi.tuna.tsinghua.edu.cn/simple opencv-contrib-python==3.4.1.15
