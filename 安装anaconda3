@@ -1,0 +1,18 @@
+卸载anaconda:如果你想卸载之前的anaconda,就执行这一步
+  第一步：打开anaconda prompt
+  第二步：依次输入以下命令：（如果你的anaconda版本过低可能会失败）
+  conda install tqdm -f
+  conda install anaconda-clean
+  anaconda-clean --yes
+  第三步：执行完以上命令后，找到并运行原安装目录下的 Uninstall-Anaconda3.exe
+  第四步：最后就是把无效快捷模式这类的图标删了
+  第五步：重启电脑，就完成了
+
+
+
+安装anaconda3：
+官网下载地址链接https://www.anaconda.com/products/individual
+根据你电脑系统进行选择windows、Macos、Linux
+官网下载可能会比较慢，我这里还提供了清华源镜像：地址链接https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/
+下载好后：next->I Agree->先点击Just me  后再next->然后就是选择你要安装的地址->然后在advanced option下的两个选项都都勾上
+->然后install->next->next->Fnish就可以了
